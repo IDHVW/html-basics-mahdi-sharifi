@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<script>
+    const linkedInUrl = "https://www.linkedin.com/in/mahdi-sharifi-1191451a1/";
+    const instagramUrl = "https://www.instagram.com/mahdish116/";
+
+    function onIconClick(url) {
+        window.open(url, "_blank")
+    }
+</script>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahdi Sharifi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .profile {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #0077B5;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px 5px 0px 0px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .contact-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 5%;
+            margin: 10px 0px;
+            cursor: pointer
+        }
+
+        .profile-info {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        
+        td {
+            padding-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile">
+        <div class="header">
+            <h1>Mahdi Sharifi</h1>
+            <img class="profile-image" src="Resources/mahdi_sharifi_quadrat.jpg" alt="My Profile Image">
+        </div>
+        <div class="profile-info">
+            <h2>Über mich</h2>
+            <table>
+                <tr>
+                    <td>Berufliche Tätigkeit:</td>
+                    <td>Applikationsentwickler</td>
+                </tr>
+                <tr>
+                    <td>Alter:</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Wohnort:</td>
+                    <td>Deitingen, Solothurn</td>
+                </tr>
+            </table>
+
+            <h2>Kontakt</h2>
+            <a href="mailto:mahdi.sharifi@hftm.ch">mahdi.sharifi@hftm.ch</a>
+            <br>
+            <img class="contact-image" src="Resources/LinkedInIcon.png" alt="LinkedIn Icon"
+                onclick="onIconClick(linkedInUrl)">
+
+            <img class="contact-image" src="Resources/InstagramIcon.png" alt="Instagram Icon"
+                onclick="onIconClick(instagramUrl)">
+        </div>
+    </div>
+</body>
+
+</html>
